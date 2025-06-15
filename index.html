@@ -1,13 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>Marvel Heroes</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <header class="header">
+    <h1>Marvel Heroes</h1>
+    <input type="text" id="search" placeholder="Buscar herói..." />
+  </header>
+
+  <main class="hero-container">
+    <div class="hero-card" id="heroCard"></div>
+    <div class="comics-section" id="comicsSection"></div>
+    <div class="stories-section" id="storiesSection"></div>
+  </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
+
+
+ 
+ 
