@@ -1,0 +1,55 @@
+/* Cores oficiais Marvel */
+:root {
+  --marvel-red: #E63946;
+  --marvel-yellow: #F4A261;
+  --marvel-black: #1D1D1D;
+  --marvel-white: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--marvel-black);
+  color: var(--marvel-white);
+}
+
+.header {
+  padding: 20px;
+  text-align: center;
+  background-color: var(--marvel-red);
+}
+
+#search {
+  width: 80%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  max-width: 400px;
+  margin-top: 10px;
+}
+
+.hero-container {
+  padding: 20px;
+}
+
+.hero-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--marvel-yellow);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.comics-section, .stories-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .hero-card {
+    padding: 10px;
+  }
+}
