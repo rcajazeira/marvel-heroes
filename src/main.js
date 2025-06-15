@@ -1,4 +1,8 @@
+import CryptoJS from 'crypto-js'; // Importante!
 // Função para gerar o hash para autenticação
+/* function generateHash(ts, privateKey, publicKey) {
+  return CryptoJS.MD5(ts + privateKey + publicKey).toString();
+} */
 function generateHash(ts, privateKey, publicKey) {
   return CryptoJS.MD5(ts + privateKey + publicKey).toString();
 }
