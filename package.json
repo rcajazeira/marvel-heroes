@@ -18,3 +18,12 @@
 {
   "homepage": "https://rcajazeira.github.io/marvel-heroes" 
 }
+{
+  "name": "marvel-heroes",
+  "version": "1.0.0",
+  "homepage": "https://rcajazeira.github.io/marvel-heroes",  // URL final do projeto
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  }
+}
