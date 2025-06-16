@@ -1,32 +1,18 @@
 {
   "name": "marvel-heroes",
+  "version": "1.0.0",
   "private": true,
-  "version": "0.0.0",
+  "homepage": "https://rcajazeira.github.io/marvel-heroes", 
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "devDependencies": {
-    "vite": "^6.3.5"
-  },
   "dependencies": {
     "crypto-js": "^4.2.0"
+  },
+  "devDependencies": {
+    "vite": "^6.3.5"
   }
-}
-{
-  "homepage": "https://rcajazeira.github.io/marvel-heroes" 
-}
-{
-  "name": "marvel-heroes",
-  "version": "1.0.0",
-  "homepage": "https://rcajazeira.github.io/marvel-heroes",  // URL final do projeto
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build"
-  }
-}
-"scripts": {
-  "build": "vite build"
 }
