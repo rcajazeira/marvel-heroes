@@ -1,7 +1,7 @@
 // Função para buscar herói
 async function searchHero(name) {
   try {
-    const response = await fetch(`https://seu-backend.vercel.app/api/hero/${name}`); 
+    const response = await fetch(`https://marvel-back-end-nine.vercel.app/api/hero/${name}`); 
     const data = await response.json();
     if (data.data.results.length > 0) {
       displayHero(data.data.results[0]);
@@ -29,7 +29,7 @@ function displayHero(hero) {
 // Função para buscar quadrinhos
 async function displayComics(heroId) {
   try {
-    const response = await fetch(`https://seu-backend.vercel.app/api/comics/${heroId}`); 
+    const response = await fetch(`https://marvel-back-end-nine.vercel.app/api/comics/${heroId}`); 
     const data = await response.json();
     const comicsSection = document.getElementById("comicsSection");
     comicsSection.innerHTML = data.data.results.slice(0, 6).map(comic => `
@@ -47,7 +47,7 @@ async function displayComics(heroId) {
 // Função para buscar histórias
 async function displayStories(heroId) {
   try {
-    const response = await fetch(`https://seu-backend.vercel.app/api/stories/${heroId}`); 
+    const response = await fetch(`https://marvel-back-end-nine.vercel.app/api/stories/${heroId}`); 
     const data = await response.json();
     const storiesSection = document.getElementById("storiesSection");
     storiesSection.innerHTML = data.data.results.slice(0, 6).map(story => `
